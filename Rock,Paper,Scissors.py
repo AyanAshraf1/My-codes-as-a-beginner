@@ -25,15 +25,15 @@ def bot():
                 print(f"Bot: {lot}, and User(you): {user}")
                 score += 1
                 bot_score += 1
-            elif user == "Rock" and lot == "Scissors":
+            elif user == "rock" and lot == "scissors":
                 print("You won!")
                 print(f"Bot: {lot}, and User(you): {user}")
                 score += 1
-            elif user == "Paper" and lot == "Rock":
+            elif user == "paper" and lot == "rock":
                 print("You won!")
                 print(f"Bot: {lot}, and User(you): {user}")
                 score += 1
-            elif user == "Scissors" and lot == "Paper":
+            elif user == "scissors" and lot == "paper":
 
                 print("You won!")
                 print(f"Bot: {lot}, and User(you): {user}")
