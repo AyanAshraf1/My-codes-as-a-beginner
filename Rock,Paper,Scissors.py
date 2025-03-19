@@ -6,7 +6,7 @@ import tkinter as tkk
 
 def bot():
     global times
-    boty = ['Rock', 'Paper', 'Scissors']
+    boty = ['rock', 'paper', 'scissors']
     lot = random.choice(boty)
     score = 0
     bot_score = 0
@@ -14,7 +14,9 @@ def bot():
         times = int(input("How much times do you want to play?: "))
         for i in range(0, times):
             lot = random.choice(boty)
-            user = input("Choose between 1)Rock 2)Paper 3) Scissors: ")
+            user = None
+            while user not in boty:
+                user = input("Choose between 1)rock 2)paper 3) scissors: ").lower()
             for i in range(3, 0, -1):
                 time.sleep(1)
                 print(i)
