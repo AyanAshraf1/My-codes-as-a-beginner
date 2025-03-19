@@ -1,7 +1,7 @@
 import os
 import random
 import time
-import tkinter as tkk
+
 
 
 def bot():
@@ -56,11 +56,12 @@ def bot():
 bot()
 
 
-def again():
-    play_again = input("Do u want to play again(Y/N): ").lower()
-    if play_again == "y":
-        bot()
-
-
-for i in range(1, 100):
-    again()
+def play_again():
+    response = input("Do you want to play again (Y/N): ").upper()
+    if response == "Y":
+        return True
+    else:
+        return False
+while play_again():
+    new_game()
+print("Bye Have a nice day.")
