@@ -54,3 +54,13 @@ def bot():
 
 
 bot()
+
+
+def again():
+    play_again = input("Do u want to play again(Y/N): ").lower()
+    if play_again == "y":
+        bot()
+
+
+for i in range(1, 100):
+    again()
